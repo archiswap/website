@@ -66,7 +66,7 @@ export default function Home() {
 						<div className={styles.footer_content_left}>
 							<div className={styles.footer_logo}></div>
 							<div className={styles.footer_text}>
-								Decentralized Liquidity Infrastructure
+								Decentralized Finance Infrastructure
 							</div>
 						</div>
 						<div className={styles.footer_content_right}>
