@@ -29,7 +29,7 @@ export default function Home() {
 						<div
 							className={styles.header_button}
 							onClick={() => {
-								turnPage('https://app.archiswap.io/#/swap')
+								openPage('https://app.archiswap.io/#/swap')
 							}}
 						>
 							Enter App
@@ -44,7 +44,7 @@ export default function Home() {
 								<div
 									className={styles.center_left_button}
 									onClick={() => {
-										turnPage(
+										openPage(
 											'https://app.archiswap.io/#/swap'
 										)
 									}}
