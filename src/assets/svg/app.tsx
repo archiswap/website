@@ -1,8 +1,8 @@
 export const TwitterIcon = (props: any) => {
 	return (
 		<svg
-			width="32"
-			height="32"
+			width="30"
+			height="30"
 			viewBox="0 0 48 48"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
@@ -21,8 +21,8 @@ export const TwitterIcon = (props: any) => {
 export const DiscordIcon = (props: any) => {
 	return (
 		<svg
-			width="32"
-			height="32"
+			width="30"
+			height="30"
 			viewBox="0 0 48 48"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +41,8 @@ export const DiscordIcon = (props: any) => {
 export const GithubIcon = (props: any) => {
 	return (
 		<svg
-			width="32"
-			height="32"
+			width="30"
+			height="30"
 			viewBox="0 0 48 48"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
@@ -61,8 +61,8 @@ export const GithubIcon = (props: any) => {
 export const MediumIcon = (props: any) => {
 	return (
 		<svg
-			width="32"
-			height="32"
+			width="30"
+			height="30"
 			viewBox="0 0 48 48"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
@@ -79,6 +79,95 @@ export const MediumIcon = (props: any) => {
 }
 
 export const ArrowIcon = (props: any) => {
+	return (
+		<svg
+			width="9"
+			height="15"
+			viewBox="0 0 9 15"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			{...props}
+		>
+			<path
+				fill-rule="evenodd"
+				clip-rule="evenodd"
+				d="M0.706956 0.706956C0.316431 1.09748 0.316432 1.73065 0.706956 2.12117L5.8891 7.30332L0.828387 12.364C0.437862 12.7546 0.437862 13.3877 0.828387 13.7782C1.21891 14.1688 1.85208 14.1688 2.2426 13.7782L7.89945 8.12139C8.22665 7.7942 8.27971 7.29669 8.05864 6.91425C8.02685 6.71275 7.93331 6.5191 7.77802 6.36381L2.12117 0.706956C1.73064 0.316431 1.09748 0.316431 0.706956 0.706956Z"
+				fill="white"
+			/>
+		</svg>
+	)
+}
+
+export const ButtonIcon = (props: any) => {
+	return (
+		<svg
+			width="290"
+			height="82"
+			viewBox="0 0 290 82"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			{...props}
+		>
+			<rect
+				x="2"
+				y="2"
+				width="286"
+				height="78.2737"
+				rx="8"
+				fill="#1B003D"
+				fill-opacity="0.3"
+			/>
+			<rect
+				x="1.25"
+				y="1.25"
+				width="287.5"
+				height="79.7737"
+				rx="8.75"
+				stroke="url(#paint0_linear_323_12238)"
+				stroke-opacity="0.3"
+				stroke-width="1.5"
+			/>
+			<rect
+				x="8"
+				y="8"
+				width="274"
+				height="66"
+				rx="7"
+				fill="#1B003D"
+				fill-opacity="0.3"
+				stroke="url(#paint1_linear_323_12238)"
+				stroke-width="2"
+			/>
+			<defs>
+				<linearGradient
+					id="paint0_linear_323_12238"
+					x1="287.953"
+					y1="41.1368"
+					x2="18.3137"
+					y2="73.1743"
+					gradientUnits="userSpaceOnUse"
+				>
+					<stop stop-color="#88BEE6" />
+					<stop offset="0.515625" stop-color="#8247E5" />
+					<stop offset="0.985993" stop-color="#D6A0A8" />
+				</linearGradient>
+				<linearGradient
+					id="paint1_linear_323_12238"
+					x1="282.955"
+					y1="41"
+					x2="23.588"
+					y2="75.2325"
+					gradientUnits="userSpaceOnUse"
+				>
+					<stop stop-color="#88BEE6" />
+					<stop offset="0.515625" stop-color="#8247E5" />
+					<stop offset="0.985993" stop-color="#D6A0A8" />
+				</linearGradient>
+			</defs>
+		</svg>
+	)
+}
+export const PhoneButtonIcon = (props: any) => {
 	return (
 		<svg
 			width="9"

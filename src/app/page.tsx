@@ -1,12 +1,16 @@
 'use client'
 import styles from './page.module.css'
+import Image from 'next/image'
 import {
 	TwitterIcon,
 	DiscordIcon,
 	GithubIcon,
 	MediumIcon,
 	ArrowIcon,
+	ButtonIcon,
+	PhoneButtonIcon,
 } from '@/assets/svg/app'
+import ButtonImg from '../assets/app/button.png'
 
 export default function Home() {
 	const turnPage = (url: string) => {
@@ -40,21 +44,36 @@ export default function Home() {
 								<div
 									className={styles.center_left_button}
 									onClick={() => {
-										turnPage('https://app.archiswap.io/#/swap')
+										turnPage(
+											'https://app.archiswap.io/#/swap'
+										)
 									}}
 								>
-									<span>Start trading</span>
-									<span className={styles.arrows_wrap}>
-										<span className={styles.arrow_one}>
-											<ArrowIcon opacity="1" />
+									{/* <ButtonIcon
+										className={
+											styles.center_left_button_img
+										}
+									/> */}
+									<div
+										className={
+											styles.center_left_button_text
+										}
+									>
+										<span>Start trading</span>
+										<span className={styles.arrows_wrap}>
+											<span className={styles.arrow_one}>
+												<ArrowIcon opacity="1" />
+											</span>
+											<span className={styles.arrow_two}>
+												<ArrowIcon opacity="1" />
+											</span>
+											<span
+												className={styles.arrow_three}
+											>
+												<ArrowIcon opacity="1" />
+											</span>
 										</span>
-										<span className={styles.arrow_two}>
-											<ArrowIcon opacity="1" />
-										</span>
-										<span className={styles.arrow_three}>
-											<ArrowIcon opacity="1" />
-										</span>
-									</span>
+									</div>
 								</div>
 							</div>
 							<div className={styles.picture_show}></div>
@@ -91,9 +110,7 @@ export default function Home() {
 								</div>
 								<div
 									onClick={() => {
-										openPage(
-											'https://github.com/archiswap'
-										)
+										openPage('https://github.com/archiswap')
 									}}
 								>
 									<GithubIcon className={styles.icon_item} />
@@ -109,10 +126,20 @@ export default function Home() {
 								</div>
 							</div>
 							<div className={styles.footer_text_right}>
-								<a href={"mailto:contact@archiswap.io"} style={{ marginRight: '32px' }}>
+								<a
+									href={'mailto:contact@archiswap.io'}
+									style={{
+										marginRight: '32px',
+									}}
+								>
 									Contact us
 								</a>
-								<a href="https://archiswap.s3.ap-northeast-1.amazonaws.com/ArchiSwap.zip" target="_blank">Press kit</a>
+								<a
+									href="https://archiswap.s3.ap-northeast-1.amazonaws.com/ArchiSwap.zip"
+									target="_blank"
+								>
+									Press kit
+								</a>
 							</div>
 						</div>
 					</div>
