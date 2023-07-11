@@ -10,11 +10,12 @@ import {
 	ButtonIcon,
 	PhoneButtonIcon,
 } from '@/assets/svg/app'
-import ButtonImg from '../assets/app/button.png'
+import DisplayImg from '../assets/app/display.png'
+import Ellipse from '../assets/app/ellipse.png'
 
 export default function Home() {
-	const turnPage = (url: string) => {
-		window.location.replace(url)
+	const turnPage = () => {
+		window.location.reload()
 	}
 	const openPage = (url: string) => {
 		window.open(url)
@@ -24,23 +25,38 @@ export default function Home() {
 		<main className="flex min-h-screen flex-col items-center justify-between">
 			<div className={styles.main_content}>
 				<div className={styles.content}>
-					<div className={styles.header_content}>
-						<div className={styles.header_logo}></div>
-						<div
-							className={styles.header_button}
-							onClick={() => {
-								openPage('https://app.archiswap.io/#/swap')
-							}}
-						>
-							Enter App
+					<div className={styles.header_content_wrap}>
+						<div className={styles.header_content}>
+							<div
+								className={styles.header_logo}
+								onClick={turnPage}
+							></div>
+							<div
+								className={styles.header_button}
+								onClick={() => {
+									openPage('https://app.archiswap.io/#/swap')
+								}}
+							>
+								Launch App
+							</div>
 						</div>
 					</div>
+
 					<div className={styles.center_content_wrap}>
 						<div className={styles.center_content}>
 							<div className={styles.center_left}>
-								<div className={styles.center_left_text}>
-									On-Chain Spot Trading with Leverage
+								<h1 className={styles.center_left_text}>
+									Innovative On-Chain Spot{' '}
+									<br className={styles.tr} /> Trading with
+									Leverage
+								</h1>
+								<div className={styles.center_left_tips}>
+									ArchiSwap is a decentralized exchange that{' '}
+									<br className={styles.br} />
+									amplifies your asset potential through
+									leveraged trading.
 								</div>
+
 								<div
 									className={styles.center_left_button}
 									onClick={() => {
@@ -49,34 +65,31 @@ export default function Home() {
 										)
 									}}
 								>
-									{/* <ButtonIcon
-										className={
-											styles.center_left_button_img
-										}
-									/> */}
 									<div
 										className={
 											styles.center_left_button_text
 										}
 									>
-										<span>Start trading</span>
-										<span className={styles.arrows_wrap}>
-											<span className={styles.arrow_one}>
-												<ArrowIcon opacity="1" />
-											</span>
-											<span className={styles.arrow_two}>
-												<ArrowIcon opacity="1" />
-											</span>
-											<span
-												className={styles.arrow_three}
-											>
-												<ArrowIcon opacity="1" />
-											</span>
+										<span className={styles.dot_wrap}>
+											<div className={styles.dot}></div>
 										</span>
+										<span>Start trading</span>
 									</div>
 								</div>
 							</div>
-							<div className={styles.picture_show}></div>
+
+							<Image
+								alt=""
+								className={styles.picture_show}
+								src={DisplayImg}
+								style={{ border: 'none' }}
+							></Image>
+							<Image
+								alt=""
+								src={Ellipse}
+								className={styles.picture_show_ellipse}
+								style={{ border: 'none' }}
+							/>
 						</div>
 					</div>
 				</div>
@@ -85,7 +98,7 @@ export default function Home() {
 						<div className={styles.footer_content_left}>
 							<div className={styles.footer_logo}></div>
 							<div className={styles.footer_text}>
-								Decentralized Finance Infrastructure
+								Amplifies your asset potential
 							</div>
 						</div>
 						<div className={styles.footer_content_right}>
@@ -126,6 +139,15 @@ export default function Home() {
 								</div>
 							</div>
 							<div className={styles.footer_text_right}>
+								<a
+									href="https://github.com/archiswap/report/blob/0950394b1e1cd419feb30e5426c54947fc7fe760/REP-final-20230707T143845Z.pdf"
+									style={{
+										marginRight: '32px',
+									}}
+									target="_blank"
+								>
+									Audit
+								</a>
 								<a
 									href={'mailto:contact@archiswap.io'}
 									style={{
