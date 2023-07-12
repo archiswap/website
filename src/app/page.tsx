@@ -10,8 +10,8 @@ import {
 	ButtonIcon,
 	PhoneButtonIcon,
 } from '@/assets/svg/app'
-import DisplayImg from '../assets/app/display.png'
-import Ellipse from '../assets/app/ellipse.png'
+import DisplayImg from '@/assets/app/display.png'
+import Ellipse from '@/assets/app/ellipse.png'
 
 export default function Home() {
 	const turnPage = () => {
