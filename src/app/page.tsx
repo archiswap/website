@@ -12,6 +12,7 @@ import {
 } from '@/assets/svg/app'
 import DisplayImg from '@/assets/app/display.png'
 import Ellipse from '@/assets/app/ellipse.png'
+import PhoneEllipse from '@/assets/app/phone_ellipse.png'
 
 export default function Home() {
 	const turnPage = () => {
@@ -89,6 +90,12 @@ export default function Home() {
 								src={Ellipse}
 								className={styles.picture_show_ellipse}
 								style={{ border: 'none' }}
+							/>
+							<Image
+								src={PhoneEllipse}
+								className={styles.picture_show_ellipse_phone}
+								style={{ border: 'none' }}
+								alt=""
 							/>
 						</div>
 					</div>
